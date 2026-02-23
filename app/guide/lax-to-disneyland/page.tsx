@@ -7,6 +7,7 @@ export const metadata = {
 export default function GuidePage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-12">
+      {/* Headline */}
       <h1 className="text-4xl font-bold mb-6">
         How to Get From LAX to Disneyland
       </h1>
@@ -17,7 +18,7 @@ export default function GuidePage() {
         cost, time, and what works best for families.
       </p>
 
-      {/* Summary */}
+      {/* Quick summary */}
       <section className="mb-10 rounded-xl bg-gray-50 p-6 border">
         <h2 className="text-xl font-semibold mb-3">Quick Answer</h2>
         <p className="text-gray-700">
@@ -30,6 +31,7 @@ export default function GuidePage() {
 
       {/* Options */}
       <section className="space-y-10">
+        {/* Private Shuttle */}
         <div>
           <h2 className="text-2xl font-semibold mb-2">
             🚐 Private Shuttle (Best for Families)
@@ -45,6 +47,7 @@ export default function GuidePage() {
           </ul>
         </div>
 
+        {/* Uber / Lyft */}
         <div>
           <h2 className="text-2xl font-semibold mb-2">
             🚗 Uber or Lyft (Fastest)
@@ -64,7 +67,7 @@ export default function GuidePage() {
               href="https://www.uber.com/global/en/price-estimate/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-black px-5 py-3 text-white font-semibold"
+              className="rounded-lg bg-black px-5 py-3 text-white font-semibold hover:opacity-90"
             >
               Check Uber price
             </a>
@@ -72,13 +75,14 @@ export default function GuidePage() {
               href="https://www.lyft.com/rider/fare-estimate"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-pink-600 px-5 py-3 text-white font-semibold"
+              className="rounded-lg bg-pink-600 px-5 py-3 text-white font-semibold hover:opacity-90"
             >
               Check Lyft price
             </a>
           </div>
         </div>
 
+        {/* Train + Shuttle */}
         <div>
           <h2 className="text-2xl font-semibold mb-2">
             🚆 Train + Shuttle (Cheapest)
@@ -94,7 +98,7 @@ export default function GuidePage() {
         </div>
       </section>
 
-      {/* Funnel */}
+      {/* CTA / funnel */}
       <section className="mt-14 rounded-xl bg-blue-50 p-6 border">
         <h2 className="text-xl font-semibold mb-3">
           Want a personalised recommendation?
@@ -105,7 +109,7 @@ export default function GuidePage() {
         </p>
         <a
           href="/"
-          className="inline-block rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold"
+          className="inline-block rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold hover:opacity-90"
         >
           Use the ParkBase transport tool
         </a>
