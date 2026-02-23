@@ -1,167 +1,179 @@
-"use client"; // Required for interactivity in Next.js App Router
+"use client";
+
 import { useState } from "react";
 
-export default function Home() {
-  // User selections
-  const [group, setGroup] = useState("");
-  const [time, setTime] = useState("");
-  const [budget, setBudget] = useState("");
+export default function HomePage() {
+  const [groupSize, setGroupSize] = useState("1-2");
+  const [priority, setPriority] = useState("best");
 
-  // Recommendation logic
   const getRecommendation = () => {
-    if (!group || !time || !budget) return null;
-
-    // Simple rules (can refine later)
-    if (group === "5+" || time === "Night") {
+    if (priority === "cheapest") {
       return {
-        type: "Private Shuttle",
-        cost: "$140–$200 total",
-        time: "45–60 mins",
-        stress: "Low",
-        link: "#", // Replace with affiliate link later
+        title: "Train + Shuttle",
+        badge: "💸 Cheapest",
+        description:
+          "Best budget option if you’re comfortable with a longer journey and a transfer.",
+        cost: "$20–$30 per person",
+        time: "90–120 minutes",
+        stress: "Medium",
+        link: "https://www.google.com/search?q=LAX+to+Disneyland+train+shuttle",
+        cta: "View budget options",
+        color: "bg-green-600",
       };
     }
-    if (group === "3–4" && time === "Day") {
-      if (budget === "Lowest cost") {
-        return {
-          type: "Shared Shuttle",
-          cost: "$25–$40 per person",
-          time: "75–120 mins",
-          stress: "Medium–High",
-          link: "#",
-        };
-      } else {
-        return {
-          type: "Uber / Lyft",
-          cost: "$90–$160",
-          time: "45–70 mins",
-          stress: "Medium",
-          link: "#",
-        };
-      }
+
+    if (groupSize === "5+") {
+      return {
+        title: "Private Shuttle",
+        badge: "⭐ Best for families",
+        description:
+          "Door-to-door private transfer. No stops, no stress. Ideal for families with kids and luggage.",
+        cost: "$140–$180 per vehicle",
+        time: "45–60 minutes",
+        stress: "Low",
+        link: "https://www.google.com/search?q=LAX+to+Disneyland+private+shuttle",
+        cta: "Compare private shuttles",
+        color: "bg-blue-600",
+      };
     }
-    // Default
+
     return {
-      type: "Shared Shuttle",
-      cost: "$25–$40 per person",
-      time: "75–120 mins",
-      stress: "Medium–High",
-      link: "#",
+      title: "Uber or Lyft",
+      badge: "⚡ Fastest",
+      description:
+        "Direct ride from LAX to your hotel. Prices vary depending on traffic and demand.",
+      cost: "$60–$120",
+      time: "45–70 minutes",
+      stress: "Low–Medium",
+      link: "rideshare",
+      cta: "Check ride prices",
+      color: "bg-black",
     };
   };
 
   const recommendation = getRecommendation();
 
   return (
-    <main className="min-h-screen p-6 max-w-3xl mx-auto font-sans">
-      {/* HERO */}
-      <section className="text-center mb-12">
+    <main className="mx-auto max-w-4xl px-4 py-12">
+      {/* Hero */}
+      <section className="mb-14 text-center">
         <h1 className="text-4xl font-bold mb-4">
-          Plan Disneyland Smarter — Before You Even Land
+          LAX to Disneyland — Made Simple
         </h1>
-        <p className="text-lg mb-6">
-          Hotels, airport transport, and real advice for families visiting Disneyland.
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          Compare the cheapest, fastest, and least stressful ways to get from
+          LAX to Disneyland and Anaheim hotels.
         </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-          Find the Best Way From LAX to Disneyland
-        </button>
-      </section>
 
-      {/* 3 VALUE BLOCKS */}
-      <section className="grid gap-6 md:grid-cols-3 mb-12 text-center">
-        <div className="p-4 border rounded-lg shadow">
-          <h2 className="font-semibold text-xl mb-2">🚐 Airport Transport</h2>
-          <p>Know exactly how to get from LAX to your hotel — no guesswork.</p>
-        </div>
-        <div className="p-4 border rounded-lg shadow">
-          <h2 className="font-semibold text-xl mb-2">🏨 Disney-Smart Hotels</h2>
-          <p>Sort by walking time, shuttles, and family value.</p>
-        </div>
-        <div className="p-4 border rounded-lg shadow">
-          <h2 className="font-semibold text-xl mb-2">🎢 Park Planning</h2>
-          <p>Crowd-aware planning without Disney overload.</p>
+        <div className="mt-6 flex justify-center gap-4 text-sm text-gray-500">
+          <span>✔ Family-friendly</span>
+          <span>✔ No hidden fees</span>
+          <span>✔ Real travel options</span>
         </div>
       </section>
 
-      {/* TRANSPORT SELECTOR */}
-      <section className="mb-12 p-4 border rounded-lg shadow">
-        <h2 className="text-2xl font-semibold mb-4 text-center">
-          🚀 Find Your Best Transport Option
+      {/* Selector */}
+      <section className="mb-12 rounded-2xl border bg-white p-8 shadow-sm">
+        <h2 className="text-xl font-semibold mb-6">
+          Find the best option for your trip
         </h2>
 
-        {/* Group size */}
-        <div className="mb-4">
-          <p className="font-semibold mb-2">Group size</p>
-          {["1–2", "3–4", "5+"].map((g) => (
-            <button
-              key={g}
-              className={`mr-2 mb-2 px-4 py-2 rounded-lg border ${
-                group === g ? "bg-blue-600 text-white" : "bg-white"
-              }`}
-              onClick={() => setGroup(g)}
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div>
+            <label className="block text-sm font-medium mb-2">
+              Group size
+            </label>
+            <select
+              value={groupSize}
+              onChange={(e) => setGroupSize(e.target.value)}
+              className="w-full rounded-lg border px-4 py-3"
             >
-              {g}
-            </button>
-          ))}
+              <option value="1-2">1–2 people</option>
+              <option value="3-4">3–4 people</option>
+              <option value="5+">5+ people</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-2">
+              Priority
+            </label>
+            <select
+              value={priority}
+              onChange={(e) => setPriority(e.target.value)}
+              className="w-full rounded-lg border px-4 py-3"
+            >
+              <option value="best">Best overall</option>
+              <option value="cheapest">Lowest cost</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      {/* Recommendation Card */}
+      <section className="rounded-2xl border bg-gray-50 p-8 shadow-sm">
+        <span className="inline-block mb-3 rounded-full bg-gray-200 px-4 py-1 text-sm font-semibold">
+          {recommendation.badge}
+        </span>
+
+        <h3 className="text-2xl font-bold mb-3">
+          {recommendation.title}
+        </h3>
+
+        <p className="mb-6 text-gray-700 max-w-2xl">
+          {recommendation.description}
+        </p>
+
+        <div className="grid gap-4 sm:grid-cols-3 mb-8 text-sm">
+          <div>
+            <strong>Cost</strong>
+            <div>{recommendation.cost}</div>
+          </div>
+          <div>
+            <strong>Time</strong>
+            <div>{recommendation.time}</div>
+          </div>
+          <div>
+            <strong>Stress</strong>
+            <div>{recommendation.stress}</div>
+          </div>
         </div>
 
-        {/* Arrival time */}
-        <div className="mb-4">
-          <p className="font-semibold mb-2">Arrival time</p>
-          {["Day", "Night"].map((t) => (
-            <button
-              key={t}
-              className={`mr-2 mb-2 px-4 py-2 rounded-lg border ${
-                time === t ? "bg-blue-600 text-white" : "bg-white"
-              }`}
-              onClick={() => setTime(t)}
-            >
-              {t}
-            </button>
-          ))}
-        </div>
-
-        {/* Budget */}
-        <div className="mb-4">
-          <p className="font-semibold mb-2">Budget preference</p>
-          {["Lowest cost", "Best value", "Least stress"].map((b) => (
-            <button
-              key={b}
-              className={`mr-2 mb-2 px-4 py-2 rounded-lg border ${
-                budget === b ? "bg-blue-600 text-white" : "bg-white"
-              }`}
-              onClick={() => setBudget(b)}
-            >
-              {b}
-            </button>
-          ))}
-        </div>
-
-        {/* Recommendation */}
-        {recommendation && (
-          <div className="mt-6 p-4 bg-green-50 border-l-4 border-green-500 rounded-lg">
-            <h3 className="font-bold text-xl mb-2">
-              🏆 Recommended: {recommendation.type}
-            </h3>
-            <p>💲 Cost: {recommendation.cost}</p>
-            <p>⏱ Time: {recommendation.time}</p>
-            <p>😌 Stress Level: {recommendation.stress}</p>
+        {recommendation.link === "rideshare" ? (
+          <div className="flex gap-4 flex-wrap">
             <a
-              href={recommendation.link}
-              className="inline-block mt-3 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+              href="https://www.uber.com/global/en/price-estimate/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-black px-6 py-3 text-white font-semibold hover:opacity-90"
             >
-              Book / Learn More
+              Check Uber price
+            </a>
+            <a
+              href="https://www.lyft.com/rider/fare-estimate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-pink-600 px-6 py-3 text-white font-semibold hover:opacity-90"
+            >
+              Check Lyft price
             </a>
           </div>
+        ) : (
+          <a
+            href={recommendation.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-block rounded-lg px-6 py-3 text-white font-semibold hover:opacity-90 ${recommendation.color}`}
+          >
+            {recommendation.cta}
+          </a>
         )}
       </section>
 
-      {/* FOOTER CTA */}
-      <section className="text-center">
-        <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
-          Start Planning My Trip
-        </button>
-      </section>
+      <footer className="mt-14 text-center text-sm text-gray-500">
+        ParkBase helps families choose the right transport — without stress,
+        upsells, or confusing options.
+      </footer>
     </main>
   );
 }
