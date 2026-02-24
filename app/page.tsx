@@ -1,96 +1,153 @@
-import { FaPlane, FaBus, FaRegClock } from "react-icons/fa";
+import Link from "next/link";
+import { FaPlane, FaBus, FaHotel, FaRoute } from "react-icons/fa";
 
 export const metadata = {
-  title: "ParkBase — Quick LAX to Disneyland Transport Tool",
+  title: "Magic Route — LAX to Disneyland Transport & Hotel Guide",
   description:
-    "Find the fastest, cheapest, and easiest way from LAX to Disneyland. Compare Uber, Lyft, shuttles, and trains in one place.",
+    "Magic Route helps families plan the easiest way to get from LAX to Disneyland, compare transport options, and find nearby hotels.",
 };
 
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-12">
-      {/* Hero Section */}
-      <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4">
-          Get from LAX to Disneyland Stress-Free
-        </h1>
-        <p className="text-lg text-gray-700 mb-6">
-          Compare private shuttles, Uber, Lyft, and trains instantly. Find the
-          fastest or cheapest option for your group.
-        </p>
-        <a
-          href="#transport-tool"
-          className="inline-block rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 px-6 py-3 text-white font-semibold shadow-lg transform hover:scale-105 transition"
-        >
-          Try the ParkBase Tool
-        </a>
-      </section>
+    <main className="bg-white text-gray-900">
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-900 via-blue-900 to-indigo-800 text-white">
+        <div className="mx-auto max-w-6xl px-6 py-24 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
+            Magic Route
+          </h1>
+          <p className="mt-4 text-lg md:text-2xl text-blue-100">
+            The easiest way to get from LAX to Disneyland
+          </p>
 
-      {/* Transport Tool Placeholder */}
-      <section
-        id="transport-tool"
-        className="mb-16 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 p-6 border shadow-lg text-center"
-      >
-        <h2 className="text-2xl font-semibold mb-4">ParkBase Transport Tool</h2>
-        <p className="text-gray-700 mb-4">
-          Select your group size, luggage, and priority (fastest/cheapest), and
-          we’ll show the best options.
-        </p>
-        <div className="inline-block rounded-lg bg-green-600 px-6 py-3 text-white font-semibold hover:shadow-xl hover:scale-105 transform transition cursor-pointer">
-          Start Now
-        </div>
-      </section>
+          <p className="mx-auto mt-6 max-w-2xl text-blue-200">
+            Compare shuttles, rideshares, and private transfers — plus discover
+            the best nearby hotels — all in one simple guide.
+          </p>
 
-      {/* Guide Page CTA */}
-      <section className="mb-16 rounded-xl bg-gradient-to-r from-yellow-50 to-yellow-100 p-6 border border-yellow-200 text-center shadow hover:shadow-lg transition">
-        <h2 className="text-2xl font-semibold mb-3">
-          Not sure how to get from LAX to Disneyland?
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Check our complete guide with all transport options, costs, and travel
-          times.
-        </p>
-        <a
-          href="/guide/lax-to-disneyland"
-          className="inline-block rounded-lg bg-yellow-600 px-6 py-3 text-white font-semibold hover:shadow-xl hover:scale-105 transform transition"
-        >
-          View the Guide
-        </a>
-      </section>
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/guide/lax-to-disneyland"
+              className="rounded-xl bg-yellow-400 px-8 py-4 font-semibold text-gray-900 shadow-lg hover:bg-yellow-300 transition"
+            >
+              Plan your route
+            </Link>
 
-      {/* How It Works Section */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8 text-center">
-          How It Works
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 rounded-xl bg-white border shadow hover:shadow-xl transform hover:scale-105 transition text-center">
-            <FaPlane className="mx-auto text-blue-500 text-4xl mb-4" />
-            <h3 className="font-semibold mb-2">1. Input Your Details</h3>
-            <p className="text-gray-700 text-sm">
-              Choose your group size, luggage, and priority (fastest/cheapest).
-            </p>
-          </div>
-          <div className="p-6 rounded-xl bg-white border shadow hover:shadow-xl transform hover:scale-105 transition text-center">
-            <FaBus className="mx-auto text-green-500 text-4xl mb-4" />
-            <h3 className="font-semibold mb-2">2. Compare Options</h3>
-            <p className="text-gray-700 text-sm">
-              See Uber, Lyft, shuttles, and train options side by side.
-            </p>
-          </div>
-          <div className="p-6 rounded-xl bg-white border shadow hover:shadow-xl transform hover:scale-105 transition text-center">
-            <FaRegClock className="mx-auto text-yellow-500 text-4xl mb-4" />
-            <h3 className="font-semibold mb-2">3. Book & Relax</h3>
-            <p className="text-gray-700 text-sm">
-              Choose your preferred transport and enjoy a stress-free ride.
-            </p>
+            <Link
+              href="/guide/lax-to-disneyland"
+              className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white hover:bg-white/10 transition"
+            >
+              View complete guide
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-20 text-center text-gray-500 text-sm">
-        © 2026 ParkBase — Your Disneyland Transport Guide
+      {/* VALUE PROPS */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-10 md:grid-cols-4">
+          <div className="rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition">
+            <FaRoute className="text-3xl text-indigo-600" />
+            <h3 className="mt-4 text-xl font-bold">Transport made simple</h3>
+            <p className="mt-2 text-gray-600">
+              Compare shuttles, Uber, Lyft, private transfers, and rental options
+              with realistic travel times and costs.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition">
+            <FaHotel className="text-3xl text-indigo-600" />
+            <h3 className="mt-4 text-xl font-bold">Stay closer, stress less</h3>
+            <p className="mt-2 text-gray-600">
+              Find family-friendly hotels and motels near Disneyland, sorted by
+              distance, price, and convenience.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition">
+            <FaBus className="text-3xl text-indigo-600" />
+            <h3 className="mt-4 text-xl font-bold">Know before you go</h3>
+            <p className="mt-2 text-gray-600">
+              Understand peak traffic times, luggage tips, and the fastest ways
+              to arrive without surprises.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition">
+            <h3 className="mt-4 text-xl font-bold">Hotels near Disneyland</h3>
+            <p className="mt-2 text-gray-600">
+              From budget places where you just need a bed, to comfortable
+              family-friendly stays within walking distance of the park.
+            </p>
+            <Link
+              href="/hotels-near-disneyland"
+              className="mt-4 inline-block font-semibold text-indigo-600 hover:underline"
+            >
+              View hotel options →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURED GUIDE */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <h2 className="text-3xl font-extrabold text-center">
+            Popular guide
+          </h2>
+
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl bg-white p-8 shadow-md">
+            <h3 className="text-2xl font-bold">
+              LAX to Disneyland: Complete Transport Guide
+            </h3>
+            <p className="mt-3 text-gray-600">
+              Everything you need to know about getting from Los Angeles
+              International Airport to Disneyland Resort — including costs,
+              timing, and the best options for families.
+            </p>
+
+            <Link
+              href="/guide/lax-to-disneyland"
+              className="mt-6 inline-block rounded-lg bg-indigo-600 px-6 py-3 font-semibold text-white hover:bg-indigo-500 transition"
+            >
+              Read the guide →
+            </Link>
+
+            <p className="mt-4 text-sm text-gray-500">
+              Planning where to stay?{" "}
+              <Link
+                href="/hotels-near-disneyland"
+                className="font-medium text-indigo-600 hover:underline"
+              >
+                See hotels near Disneyland →
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST */}
+      <section className="mx-auto max-w-4xl px-6 py-20 text-center">
+        <h2 className="text-3xl font-extrabold">
+          Built for families, not travel agents
+        </h2>
+        <p className="mt-4 text-gray-600">
+          Magic Route is an independent travel planning guide designed to help
+          families make confident decisions when visiting major theme parks.
+          We don’t sell tickets — we help you choose the best route, stay, and
+          plan for your trip.
+        </p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-gray-200 bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-gray-500">
+          <p>
+            Magic Route is an independent travel guide and is not affiliated
+            with, endorsed by, or sponsored by The Walt Disney Company or
+            Disneyland Resort.
+          </p>
+        </div>
       </footer>
     </main>
   );
