@@ -1,17 +1,19 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://magic-route.vercel.app";
+
   return [
     {
-      url: "https://magic-route.vercel.app",
+      url: `${baseUrl}/`,
       lastModified: new Date(),
     },
     {
-      url: "https://magic-route.vercel.app/guide/lax-to-disneyland",
+      url: `${baseUrl}/guide/lax-to-disneyland`,
       lastModified: new Date(),
     },
     {
-      url: "https://magic-route.vercel.app/hotels-near-disneyland",
+      url: `${baseUrl}/hotels-near-disneyland`,
       lastModified: new Date(),
     },
   ];
