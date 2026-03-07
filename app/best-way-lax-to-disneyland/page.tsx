@@ -1,58 +1,100 @@
 export const metadata = {
-  title: "Best Way to Get from LAX to Disneyland (2026 Guide)",
+  title: "Best Way to Get from LAX to Disneyland",
   description:
-    "Discover the best way to get from LAX to Disneyland including Uber, shuttle, private transfers and travel times to Anaheim.",
+    "Compare Uber, shuttles and private transfers from LAX to Disneyland. Travel times, costs and the easiest way to reach Anaheim.",
 };
 
 export default function Page() {
   return (
-    <main style={{ padding: "40px", maxWidth: "900px", margin: "auto" }}>
-      <h1>Best Way to Get from LAX to Disneyland</h1>
+    <main style={{maxWidth:"1100px",margin:"auto",padding:"40px"}}>
 
-      <p>
-        Getting from Los Angeles International Airport (LAX) to Disneyland in
-        Anaheim is one of the first things visitors need to plan when travelling
-        to Southern California.
+      <h1 style={{fontSize:"42px",marginBottom:"10px"}}>
+        Best Way to Get from LAX to Disneyland
+      </h1>
+
+      <p style={{fontSize:"18px",color:"#555"}}>
+        Disneyland Resort is about <b>34 miles from Los Angeles Airport (LAX)</b>.
+        Here are the fastest and easiest transport options to reach Anaheim.
       </p>
 
-      <h2>Quick Answer</h2>
+      {/* Quick answer */}
+      <div style={{
+        background:"#f6f6f6",
+        padding:"25px",
+        borderRadius:"10px",
+        marginTop:"30px"
+      }}>
+        <h2>Quick Answer</h2>
+        <p>
+          For most travellers the easiest option is <b>Uber or Lyft</b>.
+          It normally takes <b>35–50 minutes</b> and costs around
+          <b> $70–$110</b> depending on traffic.
+        </p>
+      </div>
+
+      {/* Transport cards */}
+      <h2 style={{marginTop:"40px"}}>Transport Options</h2>
+
+      <div style={{
+        display:"grid",
+        gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",
+        gap:"20px",
+        marginTop:"20px"
+      }}>
+
+        <div style={{border:"1px solid #eee",padding:"20px",borderRadius:"10px"}}>
+          <h3>Uber / Lyft</h3>
+          <p><b>Time:</b> 35–50 minutes</p>
+          <p><b>Cost:</b> $70–$110</p>
+          <p>Fastest and most popular option for families.</p>
+        </div>
+
+        <div style={{border:"1px solid #eee",padding:"20px",borderRadius:"10px"}}>
+          <h3>Airport Shuttle</h3>
+          <p><b>Time:</b> 60–90 minutes</p>
+          <p><b>Cost:</b> $30–$45 per person</p>
+          <p>Cheaper for solo travellers but slower.</p>
+        </div>
+
+        <div style={{border:"1px solid #eee",padding:"20px",borderRadius:"10px"}}>
+          <h3>Private Transfer</h3>
+          <p><b>Time:</b> 35–45 minutes</p>
+          <p><b>Cost:</b> $120+</p>
+          <p>Luxury option with scheduled pickup.</p>
+        </div>
+
+      </div>
+
+      {/* Travel time */}
+      <h2 style={{marginTop:"50px"}}>Travel Distance</h2>
 
       <p>
-        The fastest and most convenient way to travel from LAX to Disneyland is
-        usually Uber or Lyft. Travel time is normally between 35 and 50 minutes
-        depending on traffic.
+        The drive from LAX to Disneyland is roughly <b>34 miles (55km)</b>.
+        Traffic can vary significantly depending on the time of day,
+        especially during afternoon rush hour in Los Angeles.
       </p>
 
-      <h2>All Transport Options</h2>
+      {/* Internal links */}
+      <h2 style={{marginTop:"50px"}}>Helpful Guides</h2>
 
       <ul>
-        <li>Uber or Lyft</li>
-        <li>Airport shuttle</li>
-        <li>Private transfer</li>
-        <li>Rental car</li>
+        <li>
+          <a href="/guide/lax-to-disneyland">
+            Complete LAX → Disneyland transport guide
+          </a>
+        </li>
+        <li>
+          <a href="/uber-vs-shuttle-lax-disneyland">
+            Uber vs Shuttle comparison
+          </a>
+        </li>
+        <li>
+          <a href="/hotels-near-disneyland">
+            Hotels near Disneyland (walking distance)
+          </a>
+        </li>
       </ul>
 
-      <h2>Typical Travel Time</h2>
-
-      <ul>
-        <li>Uber/Lyft: 35–50 minutes</li>
-        <li>Shuttle: 60–90 minutes</li>
-        <li>Rental car: 40–60 minutes</li>
-      </ul>
-
-      <h2>Typical Cost</h2>
-
-      <ul>
-        <li>Uber: $70–$110</li>
-        <li>Shuttle: $30–$45 per person</li>
-        <li>Private transfer: $120+</li>
-      </ul>
-
-      <p>
-        Families travelling together often find Uber or a private transfer the
-        most convenient option, while solo travellers may prefer shared shuttle
-        services.
-      </p>
     </main>
   );
 }
