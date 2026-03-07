@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import RouteMap from "./components/RouteMap";
 
 export default function Home() {
 
   const [transport, setTransport] = useState("uber");
 
   const options:any = {
-    uber:{time:"35-50 minutes",price:"$70-$110"},
-    shuttle:{time:"60-90 minutes",price:"$30-$45 per person"},
-    private:{time:"35-45 minutes",price:"$120+"}
+    uber:{time:"35–50 minutes",price:"$70–$110"},
+    shuttle:{time:"60–90 minutes",price:"$30–$45 per person"},
+    private:{time:"35–45 minutes",price:"$120+"}
   }
 
   return (
@@ -18,15 +19,15 @@ export default function Home() {
 
       {/* HERO */}
       <h1 style={{fontSize:"44px",marginBottom:"10px"}}>
-        LAX → Disneyland Travel Planner
+        Magic Route
       </h1>
 
-      <p style={{fontSize:"18px",color:"#555"}}>
-        Quickly estimate travel time and cost from Los Angeles Airport to Disneyland Resort.
+      <p style={{fontSize:"20px",color:"#555"}}>
+        Plan the easiest trip from LAX Airport to Disneyland Resort.
       </p>
 
 
-      {/* TOOL */}
+      {/* ESTIMATOR TOOL */}
       <div style={{
         background:"#f5f5f5",
         padding:"30px",
@@ -35,6 +36,8 @@ export default function Home() {
       }}>
 
         <h2>Transport Estimator</h2>
+
+        <p>Select a transport option to estimate time and cost.</p>
 
         <select
           value={transport}
@@ -54,13 +57,18 @@ export default function Home() {
       </div>
 
 
-      {/* GUIDES */}
-      <h2 style={{marginTop:"50px"}}>Popular Guides</h2>
+      {/* MAP */}
+      <RouteMap />
 
-      <ul>
+
+      {/* GUIDES */}
+      <h2 style={{marginTop:"50px"}}>Helpful Guides</h2>
+
+      <ul style={{fontSize:"18px",lineHeight:"32px"}}>
+
         <li>
           <Link href="/guide/lax-to-disneyland">
-            Complete LAX to Disneyland Guide
+            Complete LAX → Disneyland Guide
           </Link>
         </li>
 
@@ -81,6 +89,7 @@ export default function Home() {
             Hotels Near Disneyland
           </Link>
         </li>
+
       </ul>
 
     </main>
