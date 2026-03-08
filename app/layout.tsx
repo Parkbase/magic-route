@@ -1,29 +1,9 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "LAX to Disneyland Transport Guide (2026) – ParkBase",
-  description:
-    "Compare the best ways to get from LAX to Disneyland. Shuttles, Uber, private transfers, train options, prices, travel time, and family-friendly recommendations.",
-  keywords: [
-    "LAX to Disneyland",
-    "LAX to Anaheim",
-    "Disneyland shuttle from LAX",
-    "Uber from LAX to Disneyland",
-    "Best way to get from LAX to Disneyland",
-  ],
-  openGraph: {
-    title: "LAX to Disneyland Transport Guide – ParkBase",
-    description:
-      "Find the easiest, cheapest, and least stressful way to get from LAX to Disneyland. Compare shuttles, Uber, and private transfers.",
-    url: "https://parkbase.vercel.app",
-    siteName: "ParkBase",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+export const metadata = {
+  title: "Magic Route",
+  description: "LAX to Disneyland travel planning guide",
 };
 
 export default function RootLayout({
@@ -33,7 +13,68 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+
+        {/* NAVBAR */}
+        <header
+          style={{
+            background: "#2563eb",
+            color: "white",
+            padding: "16px 24px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            fontWeight: "bold",
+          }}
+        >
+          <Link href="/" style={{ color: "white", textDecoration: "none" }}>
+            Magic Route
+          </Link>
+
+          <nav style={{ display: "flex", gap: "18px", fontWeight: "normal" }}>
+            <Link href="/guide/lax-to-disneyland" style={{ color: "white" }}>
+              Transport Guide
+            </Link>
+
+            <Link href="/best-way-lax-to-disneyland" style={{ color: "white" }}>
+              Best Route
+            </Link>
+
+            <Link href="/uber-vs-shuttle-lax-disneyland" style={{ color: "white" }}>
+              Uber vs Shuttle
+            </Link>
+
+            <Link href="/hotels-near-disneyland" style={{ color: "white" }}>
+              Hotels
+            </Link>
+          </nav>
+        </header>
+
+        {/* PAGE CONTENT */}
+        <main
+          style={{
+            maxWidth: "1100px",
+            margin: "auto",
+            padding: "40px 20px",
+          }}
+        >
+          {children}
+        </main>
+
+        {/* FOOTER */}
+        <footer
+          style={{
+            marginTop: "60px",
+            padding: "40px",
+            textAlign: "center",
+            background: "#1e293b",
+            color: "white",
+          }}
+        >
+          Magic Route • LAX to Disneyland Travel Guide
+        </footer>
+
+      </body>
     </html>
   );
 }
