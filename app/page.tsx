@@ -5,6 +5,50 @@ export default function Home() {
     <div>
 
       {/* HERO */}
+{/* DISNEYLAND IMAGE SECTION */}
+
+<section
+  style={{
+    marginTop: "50px",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "30px",
+    alignItems: "center"
+  }}
+>
+
+<img
+  src="https://images.unsplash.com/photo-1601735114076-4b3a5f2a4c55"
+  style={{
+    width: "100%",
+    borderRadius: "12px"
+  }}
+/>
+
+<div>
+
+<h2>Planning Your Trip From LAX to Disneyland</h2>
+
+<p style={{marginTop:"10px"}}>
+Traveling from Los Angeles International Airport to Disneyland Resort
+is one of the first things visitors need to plan when arriving in
+Southern California.
+</p>
+
+<p>
+The drive from LAX to Anaheim is roughly
+<strong> 34 miles</strong> and usually takes between
+<strong> 35–50 minutes</strong> depending on traffic.
+</p>
+
+<p>
+Most visitors choose rideshare services like Uber or Lyft,
+while others prefer airport shuttle services or private transfers.
+</p>
+
+</div>
+
+</section>
       <section
         style={{
           background:
