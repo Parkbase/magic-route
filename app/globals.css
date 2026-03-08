@@ -41,3 +41,10 @@ body {
 .animate-bounce-slower {
   animation: bounce-slower 6s infinite;
 }
+body{
+background:#f8fafc;
+}
+
+h1,h2,h3{
+color:#1e293b;
+}
