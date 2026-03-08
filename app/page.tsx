@@ -145,7 +145,41 @@ export default function Home() {
           </Link>
         </div>
       </section>
+{/* WALKING DISTANCE HOTELS */}
+<section
+  style={{
+    marginTop: "60px",
+    background: "#f1f5f9",
+    padding: "40px",
+    borderRadius: "12px",
+  }}
+>
 
+<h2>Hotels Within Walking Distance of Disneyland</h2>
+
+<p style={{marginTop:"10px"}}>
+Many visitors prefer staying at hotels within walking distance of Disneyland
+so they can avoid parking fees and maximize time in the parks.
+Anaheim has several hotels located just a few minutes walk from the
+Disneyland entrance.
+</p>
+
+<p>
+Popular options include hotels along Harbor Boulevard where guests can
+walk to the park gates in around 5–10 minutes.
+These hotels are especially convenient for families visiting Disneyland
+for multiple days.
+</p>
+
+<p>
+You can see the full list of the best 
+<Link href="/hotels-near-disneyland" style={{color:"#2563eb"}}>
+ walking distance hotels near Disneyland
+</Link>
+ in our hotel guide.
+</p>
+
+</section>
     </div>
   );
 }
