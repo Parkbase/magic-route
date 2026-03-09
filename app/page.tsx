@@ -20,12 +20,12 @@ export default function Home() {
         </h1>
 
         <p style={{ fontSize: "22px", opacity: 0.9 }}>
-          The easiest way to plan your journey from Los Angeles Airport to Disneyland Resort
+          Plan the easiest route from Los Angeles Airport to Disneyland Resort
         </p>
       </section>
 
 
-      {/* DISNEY INTRO */}
+      {/* ADVENTURE SECTION */}
       <section
         style={{
           marginTop: "50px",
@@ -40,13 +40,13 @@ export default function Home() {
 
         <p style={{marginTop:"10px",fontSize:"18px"}}>
           Getting from LAX to Disneyland is the first step in your California
-          adventure. Compare travel options, see the fastest routes, and find
-          hotels within walking distance of Disneyland.
+          adventure. Compare travel options, find the fastest routes,
+          and discover hotels within walking distance of Disneyland.
         </p>
       </section>
 
 
-      {/* IMAGE + INTRO */}
+      {/* INTRO IMAGE SECTION */}
       <section
         style={{
           marginTop: "60px",
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
 
-      {/* QUICK INFO CARDS */}
+      {/* QUICK INFO */}
       <section style={{marginTop:"60px"}}>
 
         <h2 style={{marginBottom:"20px"}}>Quick Travel Info</h2>
@@ -145,6 +145,45 @@ export default function Home() {
       </section>
 
 
+      {/* DISNEYLAND IMAGE SECTION */}
+      <section
+        style={{
+          marginTop:"60px",
+          display:"grid",
+          gridTemplateColumns:"1fr 1fr",
+          gap:"30px",
+          alignItems:"center"
+        }}
+      >
+
+        <div>
+
+          <h2>Experience Disneyland Resort</h2>
+
+          <p style={{marginTop:"10px"}}>
+            Disneyland Resort in Anaheim is one of the most visited theme parks
+            in the world. Millions of travelers fly into LAX each year before
+            heading to the parks.
+          </p>
+
+          <p>
+            Choosing the right transport from the airport can make the start
+            of your Disneyland trip easier and more enjoyable.
+          </p>
+
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265"
+          style={{
+            width:"100%",
+            borderRadius:"14px"
+          }}
+        />
+
+      </section>
+
+
       {/* WALKING DISTANCE HOTELS */}
       <section
         style={{
@@ -161,13 +200,13 @@ export default function Home() {
 
         <p style={{marginTop:"10px"}}>
           Many visitors prefer staying at hotels within walking distance of
-          Disneyland so they can avoid parking fees and maximize their time in
-          the parks.
+          Disneyland so they can avoid parking fees and maximize their time
+          in the parks.
         </p>
 
         <p>
-          Several Anaheim hotels located along Harbor Boulevard are only a
-          short walk from the Disneyland park entrance.
+          Several Anaheim hotels located along Harbor Boulevard are just a
+          few minutes walk from the Disneyland entrance.
         </p>
 
         <p>
@@ -175,13 +214,13 @@ export default function Home() {
           <Link href="/hotels-near-disneyland">
             walking distance hotels near Disneyland
           </Link>{" "}
-          in our hotel guide.
+          in our guide.
         </p>
 
       </section>
 
 
-      {/* TRAVEL GUIDES */}
+      {/* GUIDES */}
       <section style={{marginTop:"60px"}}>
 
         <h2 style={{marginBottom:"20px"}}>Travel Guides</h2>
@@ -195,44 +234,23 @@ export default function Home() {
         >
 
           <Link href="/guide/lax-to-disneyland">
-            <div
-              style={{
-                background:"white",
-                padding:"24px",
-                borderRadius:"14px",
-                boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-              }}
-            >
+            <div style={{background:"white",padding:"24px",borderRadius:"14px",boxShadow:"0 8px 20px rgba(0,0,0,0.08)"}}>
               <h3>LAX to Disneyland Guide</h3>
-              <p>Complete transport options and travel tips.</p>
+              <p>Complete transport options and tips.</p>
             </div>
           </Link>
 
           <Link href="/best-way-lax-to-disneyland">
-            <div
-              style={{
-                background:"white",
-                padding:"24px",
-                borderRadius:"14px",
-                boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-              }}
-            >
+            <div style={{background:"white",padding:"24px",borderRadius:"14px",boxShadow:"0 8px 20px rgba(0,0,0,0.08)"}}>
               <h3>Best Way to Get There</h3>
-              <p>Find the fastest route from the airport.</p>
+              <p>Find the fastest route.</p>
             </div>
           </Link>
 
           <Link href="/uber-vs-shuttle-lax-disneyland">
-            <div
-              style={{
-                background:"white",
-                padding:"24px",
-                borderRadius:"14px",
-                boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-              }}
-            >
+            <div style={{background:"white",padding:"24px",borderRadius:"14px",boxShadow:"0 8px 20px rgba(0,0,0,0.08)"}}>
               <h3>Uber vs Shuttle</h3>
-              <p>Compare the most popular transport options.</p>
+              <p>Compare transport options.</p>
             </div>
           </Link>
 
