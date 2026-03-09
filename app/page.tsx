@@ -8,7 +8,7 @@ export default function Home() {
       <section
         style={{
           background:
-            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1575089976121-8ed7b2a54265') center/cover",
+            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1600') center/cover",
           color: "white",
           padding: "120px 20px",
           textAlign: "center",
@@ -20,12 +20,12 @@ export default function Home() {
         </h1>
 
         <p style={{ fontSize: "22px", opacity: 0.9 }}>
-          The easiest way to travel from Los Angeles Airport to Disneyland Resort
+          The easiest way to get from Los Angeles Airport to Disneyland Resort
         </p>
       </section>
 
 
-      {/* LAX IMAGE SECTION */}
+      {/* LAX SECTION */}
       <section
         style={{
           marginTop: "60px",
@@ -37,11 +37,8 @@ export default function Home() {
       >
 
         <img
-          src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b"
-          style={{
-            width: "100%",
-            borderRadius: "14px",
-          }}
+          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200"
+          style={{ width: "100%", borderRadius: "14px" }}
         />
 
         <div>
@@ -54,13 +51,14 @@ export default function Home() {
           </p>
 
           <p>
-            After landing at LAX, travelers usually choose Uber, Lyft,
-            shuttle transfers, or private transport to reach Disneyland.
+            After landing, travelers typically use Uber, Lyft, airport
+            shuttles, or private transport to reach Disneyland.
           </p>
 
           <p>
-            The journey is around <strong>34 miles</strong> and normally takes
-            <strong> 35–50 minutes</strong> depending on traffic.
+            The drive from LAX to Disneyland is about
+            <strong> 34 miles</strong> and usually takes
+            <strong> 35–50 minutes</strong>.
           </p>
 
         </div>
@@ -68,7 +66,7 @@ export default function Home() {
       </section>
 
 
-      {/* QUICK INFO CARDS */}
+      {/* QUICK INFO */}
       <section style={{marginTop:"60px"}}>
 
         <h2 style={{marginBottom:"20px"}}>Quick Travel Info</h2>
@@ -81,38 +79,17 @@ export default function Home() {
           }}
         >
 
-          <div
-            style={{
-              background:"white",
-              padding:"24px",
-              borderRadius:"14px",
-              boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-            }}
-          >
+          <div style={{background:"white",padding:"24px",borderRadius:"14px",boxShadow:"0 8px 20px rgba(0,0,0,0.08)"}}>
             <h3>Distance</h3>
             <p>34 miles (55 km)</p>
           </div>
 
-          <div
-            style={{
-              background:"white",
-              padding:"24px",
-              borderRadius:"14px",
-              boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-            }}
-          >
+          <div style={{background:"white",padding:"24px",borderRadius:"14px",boxShadow:"0 8px 20px rgba(0,0,0,0.08)"}}>
             <h3>Travel Time</h3>
             <p>35–50 minutes</p>
           </div>
 
-          <div
-            style={{
-              background:"white",
-              padding:"24px",
-              borderRadius:"14px",
-              boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-            }}
-          >
+          <div style={{background:"white",padding:"24px",borderRadius:"14px",boxShadow:"0 8px 20px rgba(0,0,0,0.08)"}}>
             <h3>Best Option</h3>
             <p>Uber or Lyft</p>
           </div>
@@ -122,7 +99,7 @@ export default function Home() {
       </section>
 
 
-      {/* DISNEYLAND IMAGE SECTION */}
+      {/* DISNEYLAND SECTION */}
       <section
         style={{
           marginTop:"60px",
@@ -135,27 +112,24 @@ export default function Home() {
 
         <div>
 
-          <h2>Experience Disneyland Resort</h2>
+          <h2>Visit Disneyland Resort</h2>
 
           <p style={{marginTop:"10px"}}>
-            Disneyland Resort in Anaheim is one of the most famous theme parks
-            in the world. Millions of travelers visit every year after flying
-            into Los Angeles.
+            Disneyland Resort in Anaheim is one of the most famous theme
+            parks in the world. Millions of visitors arrive through LAX
+            every year before heading to the park.
           </p>
 
           <p>
-            Planning your transportation before arriving can make your
-            Disneyland adventure start smoothly and stress-free.
+            Planning your transport ahead of time helps make your Disneyland
+            adventure start smoothly.
           </p>
 
         </div>
 
         <img
-          src="https://images.unsplash.com/photo-1601735114076-4b3a5f2a4c55"
-          style={{
-            width:"100%",
-            borderRadius:"14px"
-          }}
+          src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=1200"
+          style={{width:"100%",borderRadius:"14px"}}
         />
 
       </section>
@@ -176,45 +150,36 @@ export default function Home() {
         </h2>
 
         <p style={{marginTop:"10px"}}>
-          Many visitors prefer staying at hotels within walking distance of
-          Disneyland so they can avoid parking fees and maximize time in
-          the parks.
+          Many visitors choose hotels within walking distance of Disneyland
+          so they can avoid parking fees and maximize time in the parks.
         </p>
 
         <p>
-          Several Anaheim hotels along Harbor Boulevard are just a short
-          walk from the Disneyland entrance.
+          Several Anaheim hotels along Harbor Boulevard are only a few
+          minutes walk from the Disneyland entrance.
         </p>
 
         <p>
-          See the full list of the best{" "}
+          See the best{" "}
           <Link href="/hotels-near-disneyland">
             walking distance hotels near Disneyland
           </Link>{" "}
-          in our hotel guide.
+          in our guide.
         </p>
 
       </section>
 
 
-      {/* HOTEL AREA IMAGE */}
-      <section
-        style={{
-          marginTop:"60px",
-          textAlign:"center"
-        }}
-      >
+      {/* ANAHEIM HOTEL AREA */}
+      <section style={{marginTop:"60px",textAlign:"center"}}>
 
         <h2 style={{marginBottom:"20px"}}>
           Anaheim Hotel District
         </h2>
 
         <img
-          src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1"
-          style={{
-            width:"100%",
-            borderRadius:"14px"
-          }}
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1600"
+          style={{width:"100%",borderRadius:"14px"}}
         />
 
       </section>
