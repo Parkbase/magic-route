@@ -8,7 +8,7 @@ export default function Home() {
       <section
         style={{
           background:
-            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1601735114076-4b3a5f2a4c55') center/cover",
+            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1575089976121-8ed7b2a54265') center/cover",
           color: "white",
           padding: "120px 20px",
           textAlign: "center",
@@ -20,33 +20,12 @@ export default function Home() {
         </h1>
 
         <p style={{ fontSize: "22px", opacity: 0.9 }}>
-          Plan the easiest route from Los Angeles Airport to Disneyland Resort
+          The easiest way to travel from Los Angeles Airport to Disneyland Resort
         </p>
       </section>
 
 
-      {/* ADVENTURE SECTION */}
-      <section
-        style={{
-          marginTop: "50px",
-          background: "linear-gradient(120deg,#2563eb,#3b82f6)",
-          color: "white",
-          padding: "40px",
-          borderRadius: "14px",
-          textAlign: "center"
-        }}
-      >
-        <h2 style={{fontSize:"32px"}}>Start Your Disneyland Adventure</h2>
-
-        <p style={{marginTop:"10px",fontSize:"18px"}}>
-          Getting from LAX to Disneyland is the first step in your California
-          adventure. Compare travel options, find the fastest routes,
-          and discover hotels within walking distance of Disneyland.
-        </p>
-      </section>
-
-
-      {/* INTRO IMAGE SECTION */}
+      {/* LAX IMAGE SECTION */}
       <section
         style={{
           marginTop: "60px",
@@ -58,7 +37,7 @@ export default function Home() {
       >
 
         <img
-          src="https://images.unsplash.com/photo-1601735114076-4b3a5f2a4c55"
+          src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b"
           style={{
             width: "100%",
             borderRadius: "14px",
@@ -67,23 +46,21 @@ export default function Home() {
 
         <div>
 
-          <h2>Planning Your Trip From LAX to Disneyland</h2>
+          <h2>Arriving at LAX Airport</h2>
 
           <p style={{marginTop:"10px"}}>
-            Traveling from Los Angeles International Airport to Disneyland
-            Resort in Anaheim is one of the first things visitors plan when
-            arriving in Southern California.
+            Los Angeles International Airport (LAX) is the main gateway for
+            visitors travelling to Disneyland Resort in Anaheim.
           </p>
 
           <p>
-            The drive from LAX to Disneyland is around
-            <strong> 34 miles</strong> and normally takes
+            After landing at LAX, travelers usually choose Uber, Lyft,
+            shuttle transfers, or private transport to reach Disneyland.
+          </p>
+
+          <p>
+            The journey is around <strong>34 miles</strong> and normally takes
             <strong> 35–50 minutes</strong> depending on traffic.
-          </p>
-
-          <p>
-            Most travelers choose Uber or Lyft, while others prefer shuttle
-            services or private transfers.
           </p>
 
         </div>
@@ -91,7 +68,7 @@ export default function Home() {
       </section>
 
 
-      {/* QUICK INFO */}
+      {/* QUICK INFO CARDS */}
       <section style={{marginTop:"60px"}}>
 
         <h2 style={{marginBottom:"20px"}}>Quick Travel Info</h2>
@@ -161,20 +138,20 @@ export default function Home() {
           <h2>Experience Disneyland Resort</h2>
 
           <p style={{marginTop:"10px"}}>
-            Disneyland Resort in Anaheim is one of the most visited theme parks
-            in the world. Millions of travelers fly into LAX each year before
-            heading to the parks.
+            Disneyland Resort in Anaheim is one of the most famous theme parks
+            in the world. Millions of travelers visit every year after flying
+            into Los Angeles.
           </p>
 
           <p>
-            Choosing the right transport from the airport can make the start
-            of your Disneyland trip easier and more enjoyable.
+            Planning your transportation before arriving can make your
+            Disneyland adventure start smoothly and stress-free.
           </p>
 
         </div>
 
         <img
-          src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265"
+          src="https://images.unsplash.com/photo-1601735114076-4b3a5f2a4c55"
           style={{
             width:"100%",
             borderRadius:"14px"
@@ -200,13 +177,13 @@ export default function Home() {
 
         <p style={{marginTop:"10px"}}>
           Many visitors prefer staying at hotels within walking distance of
-          Disneyland so they can avoid parking fees and maximize their time
-          in the parks.
+          Disneyland so they can avoid parking fees and maximize time in
+          the parks.
         </p>
 
         <p>
-          Several Anaheim hotels located along Harbor Boulevard are just a
-          few minutes walk from the Disneyland entrance.
+          Several Anaheim hotels along Harbor Boulevard are just a short
+          walk from the Disneyland entrance.
         </p>
 
         <p>
@@ -214,8 +191,31 @@ export default function Home() {
           <Link href="/hotels-near-disneyland">
             walking distance hotels near Disneyland
           </Link>{" "}
-          in our guide.
+          in our hotel guide.
         </p>
+
+      </section>
+
+
+      {/* HOTEL AREA IMAGE */}
+      <section
+        style={{
+          marginTop:"60px",
+          textAlign:"center"
+        }}
+      >
+
+        <h2 style={{marginBottom:"20px"}}>
+          Anaheim Hotel District
+        </h2>
+
+        <img
+          src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1"
+          style={{
+            width:"100%",
+            borderRadius:"14px"
+          }}
+        />
 
       </section>
 
