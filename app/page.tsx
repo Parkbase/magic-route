@@ -8,7 +8,7 @@ export default function Home() {
       <section
         style={{
           background:
-            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1600') center/cover",
+            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?auto=format&fit=crop&w=1600&q=80') center/cover",
           color: "white",
           padding: "120px 20px",
           textAlign: "center",
@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
 
         <p style={{ fontSize: "22px", opacity: 0.9 }}>
-          The easiest way to get from Los Angeles Airport to Disneyland Resort
+          The easiest way to travel from Los Angeles Airport to Disneyland Resort
         </p>
       </section>
 
@@ -37,7 +37,7 @@ export default function Home() {
       >
 
         <img
-          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200"
+          src="https://images.unsplash.com/photo-1504198266285-165a1d6b96f2?auto=format&fit=crop&w=1200&q=80"
           style={{ width: "100%", borderRadius: "14px" }}
         />
 
@@ -46,18 +46,18 @@ export default function Home() {
           <h2>Arriving at LAX Airport</h2>
 
           <p style={{marginTop:"10px"}}>
-            Los Angeles International Airport (LAX) is the main gateway for
-            visitors travelling to Disneyland Resort in Anaheim.
+            Los Angeles International Airport (LAX) is the main gateway
+            for visitors traveling to Disneyland Resort in Anaheim.
           </p>
 
           <p>
-            After landing, travelers typically use Uber, Lyft, airport
-            shuttles, or private transport to reach Disneyland.
+            After landing, travelers typically use Uber, Lyft,
+            airport shuttles, or private transfers.
           </p>
 
           <p>
-            The drive from LAX to Disneyland is about
-            <strong> 34 miles</strong> and usually takes
+            The drive from LAX to Disneyland is around
+            <strong> 34 miles</strong> and normally takes
             <strong> 35–50 minutes</strong>.
           </p>
 
@@ -115,20 +115,20 @@ export default function Home() {
           <h2>Visit Disneyland Resort</h2>
 
           <p style={{marginTop:"10px"}}>
-            Disneyland Resort in Anaheim is one of the most famous theme
-            parks in the world. Millions of visitors arrive through LAX
-            every year before heading to the park.
+            Disneyland Resort in Anaheim is one of the most famous
+            theme parks in the world. Millions of travelers fly
+            into LAX every year before heading to the park.
           </p>
 
           <p>
-            Planning your transport ahead of time helps make your Disneyland
-            adventure start smoothly.
+            Planning your transportation before arriving helps
+            make your Disneyland adventure smooth and stress-free.
           </p>
 
         </div>
 
         <img
-          src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=1200"
+          src="https://images.unsplash.com/photo-1522098543979-ffc7f79d1a8a?auto=format&fit=crop&w=1200&q=80"
           style={{width:"100%",borderRadius:"14px"}}
         />
 
@@ -150,12 +150,13 @@ export default function Home() {
         </h2>
 
         <p style={{marginTop:"10px"}}>
-          Many visitors choose hotels within walking distance of Disneyland
-          so they can avoid parking fees and maximize time in the parks.
+          Many visitors stay at hotels within walking distance
+          of Disneyland so they can avoid parking fees and
+          maximize time inside the parks.
         </p>
 
         <p>
-          Several Anaheim hotels along Harbor Boulevard are only a few
+          Anaheim hotels along Harbor Boulevard are only a few
           minutes walk from the Disneyland entrance.
         </p>
 
@@ -170,7 +171,7 @@ export default function Home() {
       </section>
 
 
-      {/* ANAHEIM HOTEL AREA */}
+      {/* HOTEL DISTRICT IMAGE */}
       <section style={{marginTop:"60px",textAlign:"center"}}>
 
         <h2 style={{marginBottom:"20px"}}>
@@ -178,7 +179,7 @@ export default function Home() {
         </h2>
 
         <img
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1600"
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
           style={{width:"100%",borderRadius:"14px"}}
         />
 
