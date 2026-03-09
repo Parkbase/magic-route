@@ -50,6 +50,8 @@ export default function Hotels() {
 
             <p>🚶 3 minute walk to Disneyland</p>
 
+            <p>💰💰💰 Luxury</p>
+
           </div>
 
         </div>
@@ -79,6 +81,8 @@ export default function Hotels() {
             <p>⭐ 4.6 rating</p>
 
             <p>🚶 8 minute walk to Disneyland</p>
+
+            <p>💰💰💰 Luxury</p>
 
           </div>
 
@@ -110,6 +114,8 @@ export default function Hotels() {
 
             <p>🚶 4 minute walk to Disneyland</p>
 
+            <p>💰💰 Mid-range</p>
+
           </div>
 
         </div>
@@ -139,6 +145,8 @@ export default function Hotels() {
             <p>⭐ 4.4 rating</p>
 
             <p>🚶 7 minute walk to Disneyland</p>
+
+            <p>💰 Budget</p>
 
           </div>
 
