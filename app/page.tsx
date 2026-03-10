@@ -141,11 +141,6 @@ export default function Home() {
           Disneyland Hotel Guides
         </h2>
 
-        <p style={{marginTop:"10px"}}>
-          Compare the best hotels near Disneyland including
-          cheap hotels, family resorts and hotels within walking distance.
-        </p>
-
         <div
           style={{
             display:"grid",
@@ -164,11 +159,21 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>Hotels Within Walking Distance</h3>
+              <span style={{
+                background:"#fde68a",
+                padding:"4px 8px",
+                borderRadius:"8px",
+                fontSize:"12px",
+                fontWeight:"bold"
+              }}>
+                🚶 Walking Distance
+              </span>
 
-              <p style={{marginTop:"10px"}}>
-                Discover the closest hotels to the Disneyland entrance.
-              </p>
+              <h3 style={{marginTop:"10px"}}>
+                Hotels Near Disneyland
+              </h3>
+
+              <p>Closest hotels to the Disneyland entrance.</p>
 
             </div>
 
@@ -184,11 +189,21 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>Cheap Hotels Near Disneyland</h3>
+              <span style={{
+                background:"#bbf7d0",
+                padding:"4px 8px",
+                borderRadius:"8px",
+                fontSize:"12px",
+                fontWeight:"bold"
+              }}>
+                💰 Budget Hotels
+              </span>
 
-              <p style={{marginTop:"10px"}}>
-                Budget friendly hotels within walking distance.
-              </p>
+              <h3 style={{marginTop:"10px"}}>
+                Cheap Hotels Near Disneyland
+              </h3>
+
+              <p>Affordable hotels within walking distance.</p>
 
             </div>
 
@@ -204,11 +219,21 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>Best Hotels for Families</h3>
+              <span style={{
+                background:"#fecaca",
+                padding:"4px 8px",
+                borderRadius:"8px",
+                fontSize:"12px",
+                fontWeight:"bold"
+              }}>
+                👨‍👩‍👧 Family Hotels
+              </span>
 
-              <p style={{marginTop:"10px"}}>
-                Family friendly hotels with pools and suites.
-              </p>
+              <h3 style={{marginTop:"10px"}}>
+                Best Hotels for Families
+              </h3>
+
+              <p>Family friendly resorts and suites.</p>
 
             </div>
 
@@ -246,7 +271,20 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>LAX to Disneyland Guide</h3>
+              <span style={{
+                background:"#bfdbfe",
+                padding:"4px 8px",
+                borderRadius:"8px",
+                fontSize:"12px",
+                fontWeight:"bold"
+              }}>
+                ✈️ Airport Guide
+              </span>
+
+              <h3 style={{marginTop:"10px"}}>
+                LAX to Disneyland Guide
+              </h3>
+
               <p>Complete transport options from LAX.</p>
 
             </div>
@@ -263,7 +301,20 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>Uber vs Shuttle</h3>
+              <span style={{
+                background:"#ddd6fe",
+                padding:"4px 8px",
+                borderRadius:"8px",
+                fontSize:"12px",
+                fontWeight:"bold"
+              }}>
+                🚗 Transport
+              </span>
+
+              <h3 style={{marginTop:"10px"}}>
+                Uber vs Shuttle
+              </h3>
+
               <p>Compare the best transport options.</p>
 
             </div>
