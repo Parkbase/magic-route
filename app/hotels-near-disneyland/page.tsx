@@ -44,7 +44,19 @@ export default function Hotels() {
 
           <div style={{padding:"18px"}}>
 
-            <h3>Disney's Grand Californian Hotel</h3>
+            <span style={{
+              background:"#fde68a",
+              padding:"4px 8px",
+              borderRadius:"8px",
+              fontSize:"12px",
+              fontWeight:"bold"
+            }}>
+              🏆 Best Location
+            </span>
+
+            <h3 style={{marginTop:"10px"}}>
+              Disney's Grand Californian Hotel
+            </h3>
 
             <p>⭐ 4.7 rating</p>
 
@@ -76,7 +88,19 @@ export default function Hotels() {
 
           <div style={{padding:"18px"}}>
 
-            <h3>Disneyland Hotel</h3>
+            <span style={{
+              background:"#bfdbfe",
+              padding:"4px 8px",
+              borderRadius:"8px",
+              fontSize:"12px",
+              fontWeight:"bold"
+            }}>
+              ⭐ Disney Hotel
+            </span>
+
+            <h3 style={{marginTop:"10px"}}>
+              Disneyland Hotel
+            </h3>
 
             <p>⭐ 4.6 rating</p>
 
@@ -108,7 +132,19 @@ export default function Hotels() {
 
           <div style={{padding:"18px"}}>
 
-            <h3>Best Western Park Place Inn</h3>
+            <span style={{
+              background:"#bbf7d0",
+              padding:"4px 8px",
+              borderRadius:"8px",
+              fontSize:"12px",
+              fontWeight:"bold"
+            }}>
+              👍 Best Value
+            </span>
+
+            <h3 style={{marginTop:"10px"}}>
+              Best Western Park Place Inn
+            </h3>
 
             <p>⭐ 4.3 rating</p>
 
@@ -140,7 +176,19 @@ export default function Hotels() {
 
           <div style={{padding:"18px"}}>
 
-            <h3>Howard Johnson Anaheim</h3>
+            <span style={{
+              background:"#fecaca",
+              padding:"4px 8px",
+              borderRadius:"8px",
+              fontSize:"12px",
+              fontWeight:"bold"
+            }}>
+              👨‍👩‍👧 Family Favourite
+            </span>
+
+            <h3 style={{marginTop:"10px"}}>
+              Howard Johnson Anaheim
+            </h3>
 
             <p>⭐ 4.4 rating</p>
 
