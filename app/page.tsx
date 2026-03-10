@@ -16,6 +16,7 @@ export default function Home() {
           borderRadius: "14px"
         }}
       >
+
         <h1 style={{fontSize:"50px"}}>
           LAX to Disneyland Travel Planner
         </h1>
@@ -27,7 +28,50 @@ export default function Home() {
       </section>
 
 
-      {/* QUICK TRAVEL INFO */}
+
+      {/* LAX SECTION */}
+
+      <section
+        style={{
+          marginTop:"60px",
+          display:"grid",
+          gridTemplateColumns:"1fr 1fr",
+          gap:"30px",
+          alignItems:"center"
+        }}
+      >
+
+        <img
+          src="/images/lax-airport.jpg"
+          style={{width:"100%",borderRadius:"14px"}}
+        />
+
+        <div>
+
+          <h2>Arriving at LAX Airport</h2>
+
+          <p style={{marginTop:"10px"}}>
+            Los Angeles International Airport (LAX) is the main gateway
+            for visitors travelling to Disneyland Resort in Anaheim.
+          </p>
+
+          <p>
+            Most visitors take Uber, Lyft or airport shuttles
+            to travel the 34 miles from LAX to Disneyland.
+          </p>
+
+          <p>
+            The drive typically takes between
+            <strong> 35 and 50 minutes</strong>.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      {/* QUICK INFO */}
 
       <section style={{marginTop:"60px"}}>
 
@@ -63,6 +107,32 @@ export default function Home() {
 
 
 
+      {/* HOTEL DISTRICT IMAGE */}
+
+      <section style={{marginTop:"70px",textAlign:"center"}}>
+
+        <h2 style={{fontSize:"34px"}}>
+          Anaheim Hotel District
+        </h2>
+
+        <p style={{marginTop:"10px"}}>
+          Many of the best hotels near Disneyland are located
+          along Harbor Boulevard directly across from the park entrance.
+        </p>
+
+        <img
+          src="/images/anaheim-hotels.jpg"
+          style={{
+            width:"100%",
+            borderRadius:"14px",
+            marginTop:"20px"
+          }}
+        />
+
+      </section>
+
+
+
       {/* HOTEL GUIDES */}
 
       <section style={{marginTop:"70px"}}>
@@ -72,9 +142,8 @@ export default function Home() {
         </h2>
 
         <p style={{marginTop:"10px"}}>
-          Find the best places to stay near Disneyland Resort in Anaheim.
-          Whether you're looking for cheap hotels, family friendly resorts
-          or hotels within walking distance of the park.
+          Compare the best hotels near Disneyland including
+          cheap hotels, family resorts and hotels within walking distance.
         </p>
 
         <div
@@ -86,8 +155,6 @@ export default function Home() {
           }}
         >
 
-          {/* Walking Distance */}
-
           <Link href="/hotels-near-disneyland">
 
             <div style={{
@@ -97,9 +164,7 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>
-                Hotels Within Walking Distance
-              </h3>
+              <h3>Hotels Within Walking Distance</h3>
 
               <p style={{marginTop:"10px"}}>
                 Discover the closest hotels to the Disneyland entrance.
@@ -110,8 +175,6 @@ export default function Home() {
           </Link>
 
 
-          {/* Cheap Hotels */}
-
           <Link href="/cheap-hotels-near-disneyland">
 
             <div style={{
@@ -121,20 +184,16 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>
-                Cheap Hotels Near Disneyland
-              </h3>
+              <h3>Cheap Hotels Near Disneyland</h3>
 
               <p style={{marginTop:"10px"}}>
-                Budget friendly hotels within walking distance of Disneyland.
+                Budget friendly hotels within walking distance.
               </p>
 
             </div>
 
           </Link>
 
-
-          {/* Family Hotels */}
 
           <Link href="/best-family-hotels-near-disneyland">
 
@@ -145,12 +204,10 @@ export default function Home() {
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
 
-              <h3>
-                Best Hotels for Families
-              </h3>
+              <h3>Best Hotels for Families</h3>
 
               <p style={{marginTop:"10px"}}>
-                Family friendly hotels with pools and suites near Disneyland.
+                Family friendly hotels with pools and suites.
               </p>
 
             </div>
@@ -163,7 +220,7 @@ export default function Home() {
 
 
 
-      {/* GUIDES */}
+      {/* TRAVEL GUIDES */}
 
       <section style={{marginTop:"70px"}}>
 
@@ -188,8 +245,10 @@ export default function Home() {
               borderRadius:"14px",
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
+
               <h3>LAX to Disneyland Guide</h3>
               <p>Complete transport options from LAX.</p>
+
             </div>
 
           </Link>
@@ -203,8 +262,10 @@ export default function Home() {
               borderRadius:"14px",
               boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
             }}>
+
               <h3>Uber vs Shuttle</h3>
               <p>Compare the best transport options.</p>
+
             </div>
 
           </Link>
