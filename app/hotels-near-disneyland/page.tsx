@@ -59,7 +59,8 @@ export default function Hotels() {
 
       <p style={{marginTop:"10px"}}>
         Staying at a hotel within walking distance of Disneyland is one of
-        the easiest ways to visit the parks.
+        the easiest ways to visit the parks. Many Anaheim hotels along Harbor
+        Boulevard are only a short walk from the Disneyland entrance.
       </p>
 
 
@@ -73,11 +74,8 @@ export default function Hotels() {
       }}>
 
         <button onClick={()=>setFilter("all")}>All Hotels</button>
-
         <button onClick={()=>setFilter("3")}>3 Min Walk</button>
-
         <button onClick={()=>setFilter("5")}>5 Min Walk</button>
-
         <button onClick={()=>setFilter("10")}>10 Min Walk</button>
 
       </div>
@@ -140,6 +138,37 @@ export default function Hotels() {
         ))}
 
       </div>
+
+
+      {/* MAP SECTION */}
+
+      <section style={{marginTop:"70px"}}>
+
+        <h2 style={{fontSize:"32px"}}>
+          Disneyland Hotels Map
+        </h2>
+
+        <p style={{marginTop:"10px"}}>
+          Most hotels within walking distance of Disneyland are located
+          along Harbor Boulevard directly across from the park entrance.
+        </p>
+
+        <div style={{marginTop:"20px"}}>
+
+          <iframe
+            src="https://www.google.com/maps?q=Disneyland+Anaheim&output=embed"
+            width="100%"
+            height="400"
+            style={{
+              border:"0",
+              borderRadius:"14px"
+            }}
+            loading="lazy"
+          ></iframe>
+
+        </div>
+
+      </section>
 
     </div>
 
