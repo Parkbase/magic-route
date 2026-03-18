@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Best Way to Get from LAX to Disneyland (2026 Guide)",
   description:
-    "Best way to get from LAX to Disneyland? Compare Uber, shuttle, taxi and travel times. Full guide for families visiting Disneyland.",
+    "Best way to get from LAX to Disneyland with kids? Compare Uber, shuttle, taxi and car seat options for families.",
 };
 
 export default function BestWayPage() {
@@ -26,7 +26,7 @@ export default function BestWayPage() {
         </h1>
 
         <p style={{marginTop:"10px",fontSize:"18px"}}>
-          Compare Uber, shuttle, taxi and travel time — the easiest way for families.
+          The best option depends on your family, luggage and whether you need car seats.
         </p>
       </section>
 
@@ -36,18 +36,35 @@ export default function BestWayPage() {
 
       <section style={{marginTop:"40px"}}>
 
-        <h2>Quick answer</h2>
+        <div style={{
+          background:"#dcfce7",
+          padding:"20px",
+          borderRadius:"12px"
+        }}>
+          <h2>💡 Quick Answer</h2>
+          <p><strong>Best overall:</strong> Uber or Lyft</p>
+          <p><strong>Best with young kids:</strong> Shuttle or pre-booked car with car seats</p>
+        </div>
+
+      </section>
+
+
+
+      {/* FAMILY WARNING */}
+
+      <section style={{marginTop:"40px"}}>
 
         <div style={{
-          background:"white",
+          background:"#fee2e2",
           padding:"20px",
-          borderRadius:"12px",
-          marginTop:"15px",
-          boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
+          borderRadius:"12px"
         }}>
-          <p><strong>Best option:</strong> Uber or Lyft</p>
-          <p><strong>Travel time:</strong> 35–50 minutes</p>
-          <p><strong>Cost:</strong> $60 – $100</p>
+          <h3>⚠️ Important for families</h3>
+          <p>
+            Uber and Lyft typically do NOT provide car seats. If you're travelling
+            with young children, you may need to bring your own or choose a shuttle
+            or private transfer service that offers them.
+          </p>
         </div>
 
       </section>
@@ -71,18 +88,21 @@ export default function BestWayPage() {
             <h3>🚗 Uber / Lyft</h3>
             <p>$60 – $100</p>
             <p>35–50 mins</p>
+            <p>Best for convenience</p>
           </div>
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚌 Shuttle</h3>
             <p>$30 – $50</p>
             <p>60–90 mins</p>
+            <p>Better for kids (no car seat stress)</p>
           </div>
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
-            <h3>🚕 Taxi</h3>
-            <p>$100+</p>
+            <h3>🚕 Private transfer</h3>
+            <p>$120+</p>
             <p>40 mins</p>
+            <p>Can include car seats</p>
           </div>
 
         </div>
@@ -91,16 +111,34 @@ export default function BestWayPage() {
 
 
 
-      {/* LINKS */}
+      {/* DETAILS */}
 
       <section style={{marginTop:"50px"}}>
 
-        <h2>More details</h2>
+        <h2>Uber from LAX</h2>
+
+        <p>
+          Uber is the fastest and easiest option, but may not be ideal for
+          families needing car seats.
+        </p>
 
         <p>
           👉 <Link href="/uber-cost-lax-to-disneyland">
             See Uber cost breakdown
           </Link>
+        </p>
+
+      </section>
+
+
+
+      <section style={{marginTop:"40px"}}>
+
+        <h2>Shuttle services</h2>
+
+        <p>
+          Shuttles are slower but often easier for families, especially
+          if you don’t want to deal with car seats.
         </p>
 
         <p>
@@ -117,7 +155,7 @@ export default function BestWayPage() {
 
       <section style={{marginTop:"60px"}}>
 
-        <h2>Route</h2>
+        <h2>Route from LAX to Disneyland</h2>
 
         <iframe
           src="https://www.google.com/maps?q=LAX+to+Disneyland&output=embed"
@@ -135,7 +173,7 @@ export default function BestWayPage() {
 
       <section style={{marginTop:"60px"}}>
 
-        <h2>Where to stay</h2>
+        <h2>Where to stay near Disneyland</h2>
 
         <div style={{
           display:"grid",
