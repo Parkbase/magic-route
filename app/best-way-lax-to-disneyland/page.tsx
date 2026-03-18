@@ -26,7 +26,7 @@ export default function BestWayPage() {
         </h1>
 
         <p style={{marginTop:"10px",fontSize:"18px"}}>
-          The best option depends on your family, luggage and whether you need car seats.
+          The best option depends on your family, luggage and car seat needs.
         </p>
       </section>
 
@@ -35,17 +35,11 @@ export default function BestWayPage() {
       {/* QUICK ANSWER */}
 
       <section style={{marginTop:"40px"}}>
-
-        <div style={{
-          background:"#dcfce7",
-          padding:"20px",
-          borderRadius:"12px"
-        }}>
+        <div style={{background:"#dcfce7",padding:"20px",borderRadius:"12px"}}>
           <h2>💡 Quick Answer</h2>
           <p><strong>Best overall:</strong> Uber or Lyft</p>
-          <p><strong>Best with young kids:</strong> Shuttle or pre-booked car with car seats</p>
+          <p><strong>Best with young kids:</strong> Shuttle or private transfer with car seats</p>
         </div>
-
       </section>
 
 
@@ -53,20 +47,14 @@ export default function BestWayPage() {
       {/* FAMILY WARNING */}
 
       <section style={{marginTop:"40px"}}>
-
-        <div style={{
-          background:"#fee2e2",
-          padding:"20px",
-          borderRadius:"12px"
-        }}>
+        <div style={{background:"#fee2e2",padding:"20px",borderRadius:"12px"}}>
           <h3>⚠️ Important for families</h3>
           <p>
-            Uber and Lyft typically do NOT provide car seats. If you're travelling
-            with young children, you may need to bring your own or choose a shuttle
-            or private transfer service that offers them.
+            Uber and Lyft typically do NOT provide car seats. If travelling with
+            young children, you may need to bring your own or choose a shuttle
+            or private transfer service.
           </p>
         </div>
-
       </section>
 
 
@@ -74,7 +62,6 @@ export default function BestWayPage() {
       {/* OPTIONS */}
 
       <section style={{marginTop:"50px"}}>
-
         <h2>Transport options compared</h2>
 
         <div style={{
@@ -88,57 +75,33 @@ export default function BestWayPage() {
             <h3>🚗 Uber / Lyft</h3>
             <p>$60 – $100</p>
             <p>35–50 mins</p>
-            <p>Best for convenience</p>
           </div>
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚌 Shuttle</h3>
             <p>$30 – $50</p>
             <p>60–90 mins</p>
-            <p>Better for kids (no car seat stress)</p>
           </div>
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚕 Private transfer</h3>
             <p>$120+</p>
             <p>40 mins</p>
-            <p>Can include car seats</p>
           </div>
 
         </div>
-
       </section>
 
 
 
-      {/* DETAILS */}
+      {/* LINKS */}
 
       <section style={{marginTop:"50px"}}>
-
-        <h2>Uber from LAX</h2>
-
-        <p>
-          Uber is the fastest and easiest option, but may not be ideal for
-          families needing car seats.
-        </p>
 
         <p>
           👉 <Link href="/uber-cost-lax-to-disneyland">
             See Uber cost breakdown
           </Link>
-        </p>
-
-      </section>
-
-
-
-      <section style={{marginTop:"40px"}}>
-
-        <h2>Shuttle services</h2>
-
-        <p>
-          Shuttles are slower but often easier for families, especially
-          if you don’t want to deal with car seats.
         </p>
 
         <p>
@@ -151,19 +114,49 @@ export default function BestWayPage() {
 
 
 
-      {/* MAP */}
+      {/* FAQ SECTION (🔥 THIS IS THE GOLD) */}
 
-      <section style={{marginTop:"60px"}}>
+      <section style={{marginTop:"70px"}}>
 
-        <h2>Route from LAX to Disneyland</h2>
+        <h2>Frequently Asked Questions</h2>
 
-        <iframe
-          src="https://www.google.com/maps?q=LAX+to+Disneyland&output=embed"
-          width="100%"
-          height="400"
-          style={{border:"0",borderRadius:"14px"}}
-          loading="lazy"
-        ></iframe>
+        <div style={{marginTop:"20px"}}>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>Do Ubers from LAX have car seats?</h3>
+            <p>
+              No, Uber and Lyft vehicles typically do not include car seats.
+              Families travelling with young children will need to bring their
+              own or choose a different transport option.
+            </p>
+          </div>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>Is Uber safe for kids in Los Angeles?</h3>
+            <p>
+              Yes, but California law requires children to use appropriate car
+              seats depending on age. This is why many families prefer shuttles
+              or private transfers.
+            </p>
+          </div>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>What is the cheapest way to get from LAX to Disneyland?</h3>
+            <p>
+              Shuttle services are usually the cheapest option, but they take
+              longer due to multiple stops.
+            </p>
+          </div>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>What is the fastest way to get from LAX to Disneyland?</h3>
+            <p>
+              Uber or Lyft is typically the fastest option, taking around
+              35–50 minutes depending on traffic.
+            </p>
+          </div>
+
+        </div>
 
       </section>
 
