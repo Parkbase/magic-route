@@ -11,24 +11,17 @@ export default function UberCostPage() {
     <div>
 
       {/* HERO */}
-
-      <section
-        style={{
-          background:
-            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/lax-airport.jpg') center/cover",
-          color: "white",
-          padding: "120px 20px",
-          borderRadius: "14px"
-        }}
-      >
+      <section style={{
+        background:"linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/lax-airport.jpg') center/cover",
+        color:"white",
+        padding:"120px 20px",
+        borderRadius:"14px"
+      }}>
         <h1>Uber from LAX to Disneyland Cost</h1>
         <p>Prices, travel time and tips for families</p>
       </section>
 
-
-
       {/* QUICK ANSWER */}
-
       <section style={{marginTop:"40px"}}>
         <div style={{background:"#dcfce7",padding:"20px",borderRadius:"12px"}}>
           <h2>💡 Quick Answer</h2>
@@ -37,54 +30,76 @@ export default function UberCostPage() {
         </div>
       </section>
 
-
-
-      {/* ⚠️ FAMILY NOTE */}
-
+      {/* FAMILY WARNING */}
       <section style={{marginTop:"40px"}}>
         <div style={{background:"#fee2e2",padding:"20px",borderRadius:"12px"}}>
-          <h3>⚠️ Important for families</h3>
+          <h3>⚠️ Car seats</h3>
           <p>
-            Uber does NOT usually provide car seats. If travelling with young children,
-            you may need to bring your own or consider a shuttle or private transfer.
+            Uber does NOT usually provide car seats. Families with young children
+            may need to bring their own or choose a shuttle/private transfer.
           </p>
         </div>
       </section>
 
-
-
       {/* OPTIONS */}
-
       <section style={{marginTop:"50px"}}>
         <h2>Uber options</h2>
 
         <div style={{display:"grid",gap:"20px"}}>
-
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚗 UberX</h3>
             <p>$60 – $80</p>
-            <p>Best for adults or light travel</p>
           </div>
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚙 UberXL</h3>
             <p>$80 – $120</p>
-            <p>Best for families with luggage (bring car seats if needed)</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section style={{marginTop:"70px"}}>
+        <h2>Frequently Asked Questions</h2>
+
+        <div style={{marginTop:"20px"}}>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>How much is an Uber from LAX to Disneyland?</h3>
+            <p>
+              Most Uber rides cost between $60 and $100 depending on traffic and time of day.
+            </p>
+          </div>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>Does Uber from LAX include car seats?</h3>
+            <p>
+              No, Uber does not typically include car seats, so families must bring their own.
+            </p>
+          </div>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>How long does Uber take from LAX to Disneyland?</h3>
+            <p>
+              The trip usually takes 35–50 minutes depending on traffic.
+            </p>
+          </div>
+
+          <div style={{marginBottom:"20px"}}>
+            <h3>Is Uber cheaper than a shuttle?</h3>
+            <p>
+              No, Uber is usually more expensive but much faster and more convenient.
+            </p>
           </div>
 
         </div>
       </section>
 
-
-
       {/* LINKS */}
-
       <section style={{marginTop:"60px"}}>
-
         <Link href="/uber-vs-shuttle-lax-disneyland">
           Compare Uber vs Shuttle →
         </Link>
-
       </section>
 
     </div>
