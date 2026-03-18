@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Uber vs Shuttle from LAX to Disneyland (2026) – Cost & Time Compared",
+  title: "Uber vs Shuttle from LAX to Disneyland (2026)",
   description:
-    "Uber or shuttle from LAX to Disneyland? Compare prices, travel time and the best option for families travelling to Anaheim.",
+    "Compare Uber vs shuttle from LAX to Disneyland. Costs, travel time and best option for families.",
 };
 
 export default function UberVsShuttle() {
@@ -21,13 +21,8 @@ export default function UberVsShuttle() {
           borderRadius: "14px"
         }}
       >
-        <h1 style={{fontSize:"42px"}}>
-          Uber vs Shuttle from LAX to Disneyland
-        </h1>
-
-        <p style={{marginTop:"10px",fontSize:"18px"}}>
-          Which is cheaper, faster and best for families?
-        </p>
+        <h1>Uber vs Shuttle from LAX to Disneyland</h1>
+        <p>Cost, travel time and best option for families</p>
       </section>
 
 
@@ -35,164 +30,62 @@ export default function UberVsShuttle() {
       {/* QUICK ANSWER */}
 
       <section style={{marginTop:"40px"}}>
-
-        <div style={{
-          background:"#dcfce7",
-          padding:"20px",
-          borderRadius:"12px"
-        }}>
+        <div style={{background:"#dcfce7",padding:"20px",borderRadius:"12px"}}>
           <h2>💡 Quick Answer</h2>
-          <p><strong>Uber is faster and easier</strong></p>
-          <p>Shuttles are cheaper but slower due to multiple stops</p>
+          <p><strong>Uber is faster</strong></p>
+          <p>Shuttle is cheaper and easier for families with kids</p>
         </div>
-
       </section>
 
 
 
-      {/* COMPARISON CARDS */}
+      {/* ⚠️ FAMILY WARNING */}
+
+      <section style={{marginTop:"40px"}}>
+        <div style={{background:"#fee2e2",padding:"20px",borderRadius:"12px"}}>
+          <h3>⚠️ Car seat consideration</h3>
+          <p>
+            Uber and Lyft do not typically provide car seats. Families with young
+            children may find shuttle services or private transfers easier.
+          </p>
+        </div>
+      </section>
+
+
+
+      {/* COMPARISON */}
 
       <section style={{marginTop:"50px"}}>
+        <h2>Compare options</h2>
 
-        <h2>Compare Uber vs Shuttle</h2>
+        <div style={{display:"grid",gap:"20px"}}>
 
-        <div style={{
-          display:"grid",
-          gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",
-          gap:"20px",
-          marginTop:"20px"
-        }}>
-
-          {/* UBER */}
-
-          <div style={{
-            background:"white",
-            padding:"20px",
-            borderRadius:"14px",
-            boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-          }}>
+          <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚗 Uber</h3>
-            <p><strong>Cost:</strong> $60 – $100</p>
-            <p><strong>Time:</strong> 35–50 minutes</p>
-            <p>✔ Direct trip</p>
-            <p>✔ Best for families</p>
+            <p>$60 – $100</p>
+            <p>35–50 mins</p>
+            <p>Best for speed and convenience</p>
           </div>
 
-
-          {/* SHUTTLE */}
-
-          <div style={{
-            background:"white",
-            padding:"20px",
-            borderRadius:"14px",
-            boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
-          }}>
+          <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚌 Shuttle</h3>
-            <p><strong>Cost:</strong> $30 – $50</p>
-            <p><strong>Time:</strong> 60–90 minutes</p>
-            <p>✔ Cheaper</p>
-            <p>✖ Multiple stops</p>
+            <p>$30 – $50</p>
+            <p>60–90 mins</p>
+            <p>Best for families with young kids</p>
           </div>
 
         </div>
-
       </section>
 
 
 
-      {/* FAMILY SECTION */}
-
-      <section style={{marginTop:"50px"}}>
-
-        <div style={{
-          background:"#fef3c7",
-          padding:"20px",
-          borderRadius:"12px"
-        }}>
-          <h3>👨‍👩‍👧 Best option for families</h3>
-          <p>
-            UberXL is usually the easiest option with kids and luggage.
-            It’s faster, more comfortable, and avoids waiting for other passengers.
-          </p>
-        </div>
-
-      </section>
-
-
-
-      {/* COST DETAIL LINK */}
-
-      <section style={{marginTop:"50px"}}>
-
-        <div style={{
-          background:"#e0f2fe",
-          padding:"20px",
-          borderRadius:"12px"
-        }}>
-          <h3>💰 Want exact Uber pricing?</h3>
-
-          <p>
-            <Link href="/uber-cost-lax-to-disneyland">
-              See full Uber cost breakdown →
-            </Link>
-          </p>
-
-        </div>
-
-      </section>
-
-
-
-      {/* WHY PEOPLE CHOOSE */}
-
-      <section style={{marginTop:"50px"}}>
-
-        <h2>Which should you choose?</h2>
-
-        <ul style={{lineHeight:"1.8"}}>
-          <li>Choose Uber if you want speed and convenience</li>
-          <li>Choose Shuttle if you want to save money</li>
-          <li>Families usually prefer UberXL</li>
-        </ul>
-
-      </section>
-
-
-
-      {/* INTERNAL LINKS */}
+      {/* LINKS */}
 
       <section style={{marginTop:"60px"}}>
 
-        <h2>More guides</h2>
-
-        <div style={{
-          display:"grid",
-          gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",
-          gap:"20px",
-          marginTop:"20px"
-        }}>
-
-          <Link href="/best-way-lax-to-disneyland">
-            <div style={{
-              background:"white",
-              padding:"20px",
-              borderRadius:"12px"
-            }}>
-              ⭐ Best Way Guide
-            </div>
-          </Link>
-
-          <Link href="/cheap-hotels-near-disneyland">
-            <div style={{
-              background:"white",
-              padding:"20px",
-              borderRadius:"12px"
-            }}>
-              💰 Cheap Hotels
-            </div>
-          </Link>
-
-        </div>
+        <Link href="/uber-cost-lax-to-disneyland">
+          See Uber cost breakdown →
+        </Link>
 
       </section>
 
