@@ -2,6 +2,12 @@
 
 import Link from "next/link";
 
+export const metadata = {
+  title: "Uber from LAX to Disneyland Cost (2026) – Prices, Time & Tips",
+  description:
+    "How much is an Uber from LAX to Disneyland? See real 2026 prices, travel time, UberXL costs for families, and tips to save money.",
+};
+
 export default function UberCostPage() {
   return (
     <div>
@@ -18,11 +24,11 @@ export default function UberCostPage() {
         }}
       >
         <h1 style={{fontSize:"42px"}}>
-          Uber from LAX to Disneyland Cost (2026 Guide)
+          Uber from LAX to Disneyland Cost
         </h1>
 
         <p style={{marginTop:"10px",fontSize:"18px"}}>
-          Real prices, travel time and tips for families travelling from Los Angeles Airport to Disneyland.
+          Real prices, travel time and tips for families travelling from LAX to Disneyland.
         </p>
       </section>
 
@@ -43,14 +49,14 @@ export default function UberCostPage() {
         }}>
           <p><strong>Typical cost:</strong> $60 – $100 USD</p>
           <p><strong>Travel time:</strong> 35 – 50 minutes</p>
-          <p><strong>Distance:</strong> 34 miles (55 km)</p>
+          <p><strong>Distance:</strong> 34 miles</p>
         </div>
 
       </section>
 
 
 
-      {/* COST BREAKDOWN */}
+      {/* COST GRID */}
 
       <section style={{marginTop:"50px"}}>
 
@@ -66,7 +72,7 @@ export default function UberCostPage() {
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>🚗 UberX</h3>
             <p>$60 – $80</p>
-            <p>Best for 1–3 people</p>
+            <p>1–3 people</p>
           </div>
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
@@ -77,7 +83,7 @@ export default function UberCostPage() {
 
           <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
             <h3>⚡ Surge pricing</h3>
-            <p>Can increase prices by 20–50%</p>
+            <p>+20–50%</p>
           </div>
 
         </div>
@@ -93,10 +99,10 @@ export default function UberCostPage() {
         <h2>What affects the price?</h2>
 
         <ul style={{marginTop:"15px",lineHeight:"1.8"}}>
-          <li>Time of day (rush hour = more expensive)</li>
-          <li>Airport demand and surge pricing</li>
-          <li>Type of Uber selected (UberX vs XL)</li>
-          <li>Traffic conditions on the freeway</li>
+          <li>Traffic (LA traffic is unpredictable)</li>
+          <li>Time of day</li>
+          <li>Airport demand</li>
+          <li>Type of Uber selected</li>
         </ul>
 
       </section>
@@ -114,31 +120,9 @@ export default function UberCostPage() {
         }}>
           <h3>👨‍👩‍👧 Family tip</h3>
           <p>
-            If you're travelling with kids and luggage, UberXL is usually the best option.
-            It costs more but avoids needing two cars.
+            If travelling with kids and luggage, UberXL is usually worth it
+            to avoid needing multiple cars.
           </p>
-        </div>
-
-      </section>
-
-
-
-      {/* MAP */}
-
-      <section style={{marginTop:"60px"}}>
-
-        <h2>Route from LAX to Disneyland</h2>
-
-        <div style={{marginTop:"20px"}}>
-
-          <iframe
-            src="https://www.google.com/maps?q=LAX+to+Disneyland&output=embed"
-            width="100%"
-            height="400"
-            style={{border:"0",borderRadius:"14px"}}
-            loading="lazy"
-          ></iframe>
-
         </div>
 
       </section>
@@ -162,13 +146,6 @@ export default function UberCostPage() {
             <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
               <h3>🚗 Uber vs Shuttle</h3>
               <p>Compare the best transport options</p>
-            </div>
-          </Link>
-
-          <Link href="/guide/lax-to-disneyland">
-            <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
-              <h3>✈️ Full LAX Guide</h3>
-              <p>All transport options explained</p>
             </div>
           </Link>
 
