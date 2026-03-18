@@ -1,100 +1,165 @@
+import Link from "next/link";
+
 export const metadata = {
-  title: "Best Way to Get from LAX to Disneyland",
+  title: "Best Way to Get from LAX to Disneyland (2026 Guide)",
   description:
-    "Compare Uber, shuttles and private transfers from LAX to Disneyland. Travel times, costs and the easiest way to reach Anaheim.",
+    "Best way to get from LAX to Disneyland? Compare Uber, shuttle, taxi and travel times. Full guide for families visiting Disneyland.",
 };
 
-export default function Page() {
+export default function BestWayPage() {
   return (
-    <main style={{maxWidth:"1100px",margin:"auto",padding:"40px"}}>
+    <div>
 
-      <h1 style={{fontSize:"42px",marginBottom:"10px"}}>
-        Best Way to Get from LAX to Disneyland
-      </h1>
+      {/* HERO */}
 
-      <p style={{fontSize:"18px",color:"#555"}}>
-        Disneyland Resort is about <b>34 miles from Los Angeles Airport (LAX)</b>.
-        Here are the fastest and easiest transport options to reach Anaheim.
-      </p>
+      <section
+        style={{
+          background:
+            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/lax-airport.jpg') center/cover",
+          color: "white",
+          padding: "100px 20px",
+          borderRadius: "14px"
+        }}
+      >
+        <h1 style={{fontSize:"42px"}}>
+          Best Way to Get from LAX to Disneyland
+        </h1>
 
-      {/* Quick answer */}
-      <div style={{
-        background:"#f6f6f6",
-        padding:"25px",
-        borderRadius:"10px",
-        marginTop:"30px"
-      }}>
-        <h2>Quick Answer</h2>
-        <p>
-          For most travellers the easiest option is <b>Uber or Lyft</b>.
-          It normally takes <b>35–50 minutes</b> and costs around
-          <b> $70–$110</b> depending on traffic.
+        <p style={{marginTop:"10px",fontSize:"18px"}}>
+          Compare Uber, shuttle, taxi and travel time — the easiest way for families.
         </p>
-      </div>
+      </section>
 
-      {/* Transport cards */}
-      <h2 style={{marginTop:"40px"}}>Transport Options</h2>
 
-      <div style={{
-        display:"grid",
-        gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",
-        gap:"20px",
-        marginTop:"20px"
-      }}>
 
-        <div style={{border:"1px solid #eee",padding:"20px",borderRadius:"10px"}}>
-          <h3>Uber / Lyft</h3>
-          <p><b>Time:</b> 35–50 minutes</p>
-          <p><b>Cost:</b> $70–$110</p>
-          <p>Fastest and most popular option for families.</p>
+      {/* QUICK ANSWER */}
+
+      <section style={{marginTop:"40px"}}>
+
+        <h2>Quick answer</h2>
+
+        <div style={{
+          background:"white",
+          padding:"20px",
+          borderRadius:"12px",
+          marginTop:"15px",
+          boxShadow:"0 8px 20px rgba(0,0,0,0.08)"
+        }}>
+          <p><strong>Best option:</strong> Uber or Lyft</p>
+          <p><strong>Travel time:</strong> 35–50 minutes</p>
+          <p><strong>Cost:</strong> $60 – $100</p>
         </div>
 
-        <div style={{border:"1px solid #eee",padding:"20px",borderRadius:"10px"}}>
-          <h3>Airport Shuttle</h3>
-          <p><b>Time:</b> 60–90 minutes</p>
-          <p><b>Cost:</b> $30–$45 per person</p>
-          <p>Cheaper for solo travellers but slower.</p>
+      </section>
+
+
+
+      {/* OPTIONS */}
+
+      <section style={{marginTop:"50px"}}>
+
+        <h2>Transport options compared</h2>
+
+        <div style={{
+          display:"grid",
+          gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",
+          gap:"20px",
+          marginTop:"20px"
+        }}>
+
+          <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
+            <h3>🚗 Uber / Lyft</h3>
+            <p>$60 – $100</p>
+            <p>35–50 mins</p>
+          </div>
+
+          <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
+            <h3>🚌 Shuttle</h3>
+            <p>$30 – $50</p>
+            <p>60–90 mins</p>
+          </div>
+
+          <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
+            <h3>🚕 Taxi</h3>
+            <p>$100+</p>
+            <p>40 mins</p>
+          </div>
+
         </div>
 
-        <div style={{border:"1px solid #eee",padding:"20px",borderRadius:"10px"}}>
-          <h3>Private Transfer</h3>
-          <p><b>Time:</b> 35–45 minutes</p>
-          <p><b>Cost:</b> $120+</p>
-          <p>Luxury option with scheduled pickup.</p>
+      </section>
+
+
+
+      {/* LINKS */}
+
+      <section style={{marginTop:"50px"}}>
+
+        <h2>More details</h2>
+
+        <p>
+          👉 <Link href="/uber-cost-lax-to-disneyland">
+            See Uber cost breakdown
+          </Link>
+        </p>
+
+        <p>
+          👉 <Link href="/uber-vs-shuttle-lax-disneyland">
+            Compare Uber vs Shuttle
+          </Link>
+        </p>
+
+      </section>
+
+
+
+      {/* MAP */}
+
+      <section style={{marginTop:"60px"}}>
+
+        <h2>Route</h2>
+
+        <iframe
+          src="https://www.google.com/maps?q=LAX+to+Disneyland&output=embed"
+          width="100%"
+          height="400"
+          style={{border:"0",borderRadius:"14px"}}
+          loading="lazy"
+        ></iframe>
+
+      </section>
+
+
+
+      {/* HOTELS */}
+
+      <section style={{marginTop:"60px"}}>
+
+        <h2>Where to stay</h2>
+
+        <div style={{
+          display:"grid",
+          gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",
+          gap:"20px",
+          marginTop:"20px"
+        }}>
+
+          <Link href="/cheap-hotels-near-disneyland">
+            <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
+              💰 Cheap Hotels
+            </div>
+          </Link>
+
+          <Link href="/best-family-hotels-near-disneyland">
+            <div style={{background:"white",padding:"20px",borderRadius:"12px"}}>
+              👨‍👩‍👧 Family Hotels
+            </div>
+          </Link>
+
         </div>
 
-      </div>
+      </section>
 
-      {/* Travel time */}
-      <h2 style={{marginTop:"50px"}}>Travel Distance</h2>
-
-      <p>
-        The drive from LAX to Disneyland is roughly <b>34 miles (55km)</b>.
-        Traffic can vary significantly depending on the time of day,
-        especially during afternoon rush hour in Los Angeles.
-      </p>
-
-      {/* Internal links */}
-      <h2 style={{marginTop:"50px"}}>Helpful Guides</h2>
-
-      <ul>
-        <li>
-          <a href="/guide/lax-to-disneyland">
-            Complete LAX → Disneyland transport guide
-          </a>
-        </li>
-        <li>
-          <a href="/uber-vs-shuttle-lax-disneyland">
-            Uber vs Shuttle comparison
-          </a>
-        </li>
-        <li>
-          <a href="/hotels-near-disneyland">
-            Hotels near Disneyland (walking distance)
-          </a>
-        </li>
-      </ul>
-
-    </main>
+    </div>
   );
 }
